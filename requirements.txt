@@ -1,0 +1,6 @@
+pandas
+python-dotenv
+requests
+groq
+fastapi
+uvicorn[standard]
