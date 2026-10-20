@@ -74,6 +74,3 @@ This prototype currently uses an `API_KEY` placeholder in `app.py`, rather than 
 - `fix_data.py`: removes completely empty CSV rows using Latin-1 input encoding.
 - `test.py`: standalone Gemini connectivity experiment; it requires `google-genai` and `GEMINI_API_KEY`, and is not an automated test suite.
 
-## Limitations
-
-The current implementation reads named CSV files; it does not provide arbitrary file upload or PDF question answering. Keyword retrieval can miss relevant rows and falls back to the first three rows when no keywords match. Answers cover the supplied subset and should not be treated as full-dataset calculations. Selected CSV contents are sent to Groq. `/health` reports client configuration, not a live provider connectivity test. The cache lasts only for the process lifetime.
